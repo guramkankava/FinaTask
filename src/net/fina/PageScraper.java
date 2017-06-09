@@ -11,9 +11,7 @@ import org.jsoup.nodes.Element;
 public class PageScraper {
 
 	public static void main(String[] args) {
-			
 		List <String> list = new ArrayList<>(); 
-		//String url = "http://localhost:8080/Tester/index.jsp";
 		String url = "http://www.oracle.com/";
 		try {
 			Document document = Jsoup.connect(url).get();
@@ -32,7 +30,6 @@ public class PageScraper {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
-			
 	}
 	
 }
